@@ -1,23 +1,24 @@
 #!/bin/bash
 
 # Script de instalación para dotfiles
-# Detecta SO y crea symlinks a los archivos de configuración
+# Crea symlinks a los archivos de configuración
 
 set -e
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Detectar SO
+# Detectar SO (solo informativo)
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    OS="macOS"
+    OS="macOS 🍎"
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    OS="Linux"
+    OS="Linux 🐧"
 else
-    OS="Unknown"
+    OS="$OSTYPE"
 fi
 
-echo "🔧 Instalando dotfiles en $OS..."
+echo "🔧 Instalando dotfiles en $OS"
 echo "📂 Directorio: $DOTFILES_DIR"
+echo ""
 
 # Función para crear symlink
 create_symlink() {

@@ -107,3 +107,8 @@ fi
 if command -v pyenv &> /dev/null; then
     eval "$(pyenv init -)"
 fi
+
+# ===== Cargo (Rust) =====
+if [[ -f "$HOME/.cargo/env" ]]; then
+    . "$HOME/.cargo/env"
+fi

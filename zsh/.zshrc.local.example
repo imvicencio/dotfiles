@@ -1,0 +1,11 @@
+# Archivo local para configuraciones específicas de esta máquina
+# NO se versionará en Git (agregado a .gitignore)
+
+# Ejemplo de cómo agregar información específica sin compartirla:
+
+# export WORK_EMAIL="tu-email@trabajo.com"
+# export API_KEY="tu-api-key"
+# alias work-dev="cd ~/proyectos/trabajo"
+
+# Para usar esto, agrega al final de ~/.zshrc:
+# [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

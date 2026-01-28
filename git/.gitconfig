@@ -9,12 +9,12 @@
 
 [color "diff"]
     meta = yellow bold
-    frag = magenta bold # line info
-    old = red # deletions
-    new = green # additions
+    frag = magenta bold
+    old = red
+    new = green
 
 [alias]
-    pm= "!git push -u origin master"
+    pm = "!git push -u origin master"
     c = commit -m
     co = checkout
     a = add -A
